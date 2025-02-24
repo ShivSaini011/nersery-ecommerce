@@ -1,0 +1,287 @@
+.banner-slider {
+    position: relative;
+    width: 100%;
+    margin:20px 0 20px 0;
+    /* height: 600px; */
+    overflow: hidden;
+  }
+  
+  .image-container {
+    display: flex;
+    transition: transform 0.5s ease-out;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .image-slide {
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-slide img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+/*   
+  @media (max-width: 980px) {
+    .banner-slider {
+        width: 100%;
+        height: 500px;
+      }
+    .image-slide img {
+        width: auto;
+        height: 500px;
+      }
+  } 
+
+  @media (max-width: 768px) {
+    .banner-slider {
+        width: 100%;
+        height: 400px;
+      }
+    .image-slide img {
+        width: auto;
+        height: 400px;
+      }
+  } 
+  @media (max-width: 408px) {
+    .banner-slider {
+        width: 100%;
+        height: 200px;
+      }
+    .image-slide img {
+        width: 400px;
+        height: 200px;
+      }
+  } 
+  @media (max-width: 350px) {
+    .image-slide img {
+        width: 350px;
+        height: 200px;
+      }
+  }
+  @media (max-width: 300px) {
+    .image-slide img {
+        width: 300px;
+        height: 200px;
+      }
+  } */
+
+  
+  .navigation-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: background 0.3s;
+  }
+  
+  .navigation-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .button-left {
+    left: 16px;
+  }
+  
+  .button-right {
+    right: 16px;
+  }
+  
+  .indicator-container {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  
+  .indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 35%;
+    border: 0px;
+    background: rgba(236, 233, 233, 0.87);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    /* width: 20px; */
+    background: rgba(47, 47, 47, 0.785);
+  }
+  
+  /* App download section */
+
+  .appdownload-container {
+    /* display: flex;
+    flex-direction: column; */
+text-align: center;
+margin-bottom: 30px;
+/* justify-content: center; */
+
+}
+.download-text{
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: large;
+}
+.download-item{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.download-item img{
+    width: 110px;
+}
+
+
+/* service */
+ 
+.highlights-banner__template--16940560121996__dynamic_highlights_banner .highlights-banner__content {
+    background-color: #f8f8f8;
+  }
+
+
+.highlights-banner__template--16940560121996__dynamic_highlights_banner .highlights-banner__content:before {
+  background: linear-gradient( to right, #f8f8f8 10%, rgba(248, 248, 248, 0) 100%);
+}
+
+.highlights-banner__template--16940560121996__dynamic_highlights_banner .highlights-banner__content:after {
+  background: linear-gradient( to left, #f8f8f8 10%, rgba(248, 248, 248, 0) 100%);
+}
+
+.highlights-banner__template--16940560121996__dynamic_highlights_banner .highlights-banner__block {
+  color: #4d4d4d;
+}
+
+.highlights-banner__template--16940560121996__dynamic_highlights_banner .highlights-banner__icon {
+  color: #4d4d4d;
+}
+
+.highlights-banner__content{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    background-color: #f1f0f0;
+}
+@media screen and (min-width: 1024px) {
+    .highlights-banner__content {
+        height: auto;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+}
+.highlights-banner__content {
+    position: relative;
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: center;
+    outline: none;
+}
+.highlights-banner__icon {
+  flex: 1 0 auto;
+  width: auto;
+  max-width: 35%;
+  /* height: 2.45rem; */
+  margin-right: 20px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.highlights-banner__template--16940560121996__1635435244f767b4a1 .highlights-banner__block {
+    color: #4d4d4d;
+}
+
+@media screen and (min-width: 860px) {
+    .highlight-banner__count-4 .highlights-banner__block {
+        width: 25%;
+    }
+}
+.highlight-banner__count-4 .highlights-banner__block {
+    width: 15.625rem;
+}
+.highlights-banner__block.highlights-banner__align-center {
+    flex-direction: column;
+    align-items: center;
+}
+.highlights-banner__block {
+    position: relative;
+    display: flex
+;
+    align-items: flex-start;
+    width: 100%;
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.highlights-banner__block.highlights-banner__align-center .highlights-banner__icon {
+    flex: initial;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.highlights-banner__template--16940560121996__1635435244f767b4a1 .highlights-banner__icon {
+    color: #4d4d4d;
+}
+@media screen and (min-width: 1024px) {
+    .highlights-banner__icon {
+        /* height: 2.875rem;
+         */
+         margin-top:20px;
+    }
+}
+@media screen and (min-width: 680px) {
+    .highlights-banner__icon {
+        margin: 10px;
+    }
+}
+
+.highlights-banner__block.highlights-banner__align-center .highlights-banner__text {
+    padding-right: 0;
+    text-align: center;
+}
+@media screen and (min-width: 1024px) {
+    .highlights-banner__text {
+        padding-right: 3.125rem;
+        font-size: var(--font-size-body);
+    }
+}
+@media screen and (min-width: 860px) {
+    .highlights-banner__text {
+        width: calc(100% - 3.125rem);
+    }
+}
+.highlights-banner__text {
+    width: calc(100% - 1.875rem);
+    min-width: 0;
+    padding-right: 2rem;
+    font-size: var(--font-size-body-smaller);
+    line-height: 1.4;
+}
+
+
+.highlights-banner__template--16940560121996__1635435244f767b4a1 .highlights-banner__block {
+    color: #4d4d4d;
+}
+.highlights-banner__block {
+    position: relative;
+    display: flex
+;
+    align-items: flex-start;
+    width: 100%;
+    color: #4d4d4d;
+    text-decoration: none;
+}

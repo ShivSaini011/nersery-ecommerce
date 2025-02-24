@@ -31,6 +31,7 @@ export const signupAsync=createAsyncThunk('auth/signupAsync',async(cred)=>{
 
 export const loginAsync=createAsyncThunk('auth/loginAsync',async(cred)=>{
     const res=await login(cred)
+    // console.log(res,"printmsg");
     return res
 })
 

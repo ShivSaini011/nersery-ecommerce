@@ -21,6 +21,8 @@ import {banner1, banner2, banner3, banner4, loadingAnimation} from '../../../ass
 import { resetCartItemAddStatus, selectCartItemAddStatus } from '../../cart/CartSlice'
 import { motion } from 'framer-motion'
 import { ProductBanner } from './ProductBanner'
+import BannerSlider from './BannerSlider' 
+
 import ClearIcon from '@mui/icons-material/Clear';
 import Lottie from 'lottie-react'
 
@@ -258,11 +260,12 @@ export const ProductList = () => {
 
                 {/* banners section */}
                 {
-                    !is600 && 
+                //     !is600 && 
                 
-                <Stack sx={{width:"100%",height:is800?"300px":is1200?"400px":"500px"}}>
-                    <ProductBanner images={bannerImages}/>
-                </Stack>
+                // <Stack sx={{width:"100%",height:is800?"300px":is1200?"400px":"500px"}}>
+                //     <ProductBanner images={bannerImages}/>
+                // </Stack>
+                <BannerSlider/>
                 }
 
                 {/* products */}

@@ -10,9 +10,11 @@ export const signup=async(cred)=>{
 }
 export const login=async(cred)=>{
     try {
+        console.log(cred,"cred");
         const res=await axiosi.post("auth/login",cred)
         return res.data
     } catch (error) {
+        console.log(error,"reserror");
         throw error.response.data
     }
 }

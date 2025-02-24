@@ -49,8 +49,8 @@ exports.signup=async(req,res)=>{
 exports.login=async(req,res)=>{
     try {
         // checking if user exists or not
+        console.log(req.body,"resdsfhisu");
         const existingUser=await User.findOne({email:req.body.email})
-
         // if exists and password matches the hash
         if(existingUser && (await bcrypt.compare(req.body.password,existingUser.password))){
 
